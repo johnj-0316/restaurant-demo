@@ -1,6 +1,9 @@
 {
   "name": "restaurant-demo",
   "description": "https://scrimba.com/frontend-path-c0j/~0ie/s04o93cta0/head",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "vite",
     "dev": "vite",
