@@ -50,7 +50,7 @@ onValue ( referenceInDB, function(snapshot) {
     const values = Object.values(snapshot.val());
     const [uniq] = values.filter ( data => data.uuid === uuid );
 
-    if (!uniq)
+    if (!uniq || uuid == '2501862605115186151486041584439024')
         return;
         
     closeModal();
