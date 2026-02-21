@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,200&family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="title-container">
+            <h1>John's Diner</h1>
+            <h2>The best burgers and pizzas in town</h2>
+        </header>
+        <main>
+            <section class="choices">
+                <ul class="options">
+                </ul>
+            </section>
+            <section class="checkout">
+                <h2>Your order</h2>
+                <ul class="order-list">
+                </ul>
+                <div class="total">
+                    <h3>Total price:</h3>
+                    <p id="total-price">$0</p>
+                </div>
+                <button id="complete" class="complete">
+                    Complete order
+                </button>
+            </section>
+            <section id="modal" class="modal">
+                <form id="card-details">
+                    <h2>Enter card details</h2>
+                    <div class="details">
+                        <input required class="info" id="name" name="name" minlength="2" maxlength="50" placeholder="Enter your name"/>
+                        <input required class="info" id="card-number" name="card-number" pattern="[0-9]{16}" placeholder="Enter card number"/>
+                        <input required class="info" id="card-cvv" name="card-cvv" maxlength="3" pattern="[0-9]{3}" placeholder="Enter CVV"/>
+                    </div>
+                    <button type="submit" class="complete">Pay</button>
+                </form>
+            </section>
+        </main>
+	    <script type="module" src="index.js"></script>
+    </body>
+</html>
+

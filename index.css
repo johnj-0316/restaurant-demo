@@ -1,0 +1,198 @@
+/* layout */
+body {
+    margin: 0;
+    font-family: 'Smythe', sans-serif;
+}
+
+.title-container {
+    background-image: url('/images/845364ecacaeaea44c5e3a8cd7159c5d52f26662.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 46px;
+    color: white;
+    line-height: 20px;
+    min-width: max-content;
+}
+
+.choices {
+    padding: 0 1rem;
+}
+
+.options, .order-list {
+   list-style: none;
+   padding: 0;
+   overflow: hidden;
+}
+
+.option {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 1px solid #D2D2D2;
+    width: 90%;
+    gap: 40%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.food-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.add-btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+    font-size: 32px;
+    border: 2px solid #DEDEDE;
+    font-weight: 200;
+    font-family: initial;
+}
+
+.add-btn:hover {
+    background: whitesmoke;
+}
+
+.add-btn:active {
+    background: lightgray;
+}
+
+.checkout {
+    padding: 20px 50px;
+}
+
+.orders {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.orders h3, .orders p, .total p {
+    margin: 5px 0;
+}
+
+.orders button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #BBBBBB;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #393333;
+}
+
+.complete {
+    width: 100%;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 3px;
+    margin-top: 35px;
+    padding: 24px;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 70%;
+    height: fit-content;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 100px;
+    border-radius: 4px;
+}
+
+form h2 {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
+.info {
+    inset: 0;
+    margin: 8px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+}
+
+.order-finished {
+    margin: 0 0 100px;
+    padding: 50px 0;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: #065F46;
+    background: #ECFDF5;
+    border-radius: 3px;
+    min-width: 50%;
+}
+
+/* typography */
+.title-container h1 {
+    font-size: 39px;
+}
+
+.title-container h2 {
+    font-size: 22px;
+}
+
+.food-item, .checkout h2, .orders h3, .total h3 {
+    font-size: 28px;
+}
+
+.ingredients {
+    color: #8B8B8B;
+}
+
+.food-item, .ingredients, .food-price {
+    margin: 5px 0;
+}
+
+.food-img {
+    font-size: 78px;
+    margin: 0;
+}
+
+.food-price {
+    font-size: 20px;
+}
+
+.checkout h2 {
+    text-align: center;
+}
+
+.orders p, .total p {
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.total h3 {
+    margin: 20px 0;
+}
+
