@@ -10,7 +10,7 @@ import { deviceUUID } from './device.js';
 
 // firebase setup
 const firebaseConfig = {
-    databaseURL: process.env.DATABASE_URL
+    databaseURL: import.meta.env.VITE_DATABASE_URL
 };
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
