@@ -1,17 +1,16 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
-import { 
-    getDatabase,
-    ref,
-    push,
-    onValue
-} from "https://www.gstatic.com/firebasejs/12.9.0/firebase-database.js";
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, push, onValue } from "firebase/database";
 import { menuArray } from './data.js';
 import { deviceUUID } from './device.js';
 
 // firebase setup
 const firebaseConfig = {
-    databaseURL: import.meta.env.VITE_DATABASE_URL
+    databaseURL: import.meta.env.VITE_DATABASE_URL,
+//   apiKey: import.meta.env.VITE_API_KEY,
+//   authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+//   projectId: import.meta.env.VITE_PROJECT_ID
 };
+
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const referenceInDB = ref(database, "details")
