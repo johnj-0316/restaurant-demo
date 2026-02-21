@@ -40,7 +40,6 @@ document.addEventListener ( 'click', function(e) {
 form.addEventListener ( 'submit', function(e) {
     e.preventDefault();
     handleForm(e.target);
-    finished = true;
 } );
 
 //onValue callback will run whenever an update is made to the database (referenceInDB) or on page load...
@@ -51,7 +50,7 @@ onValue ( referenceInDB, function(snapshot) {
     const values = Object.values(snapshot.val());
     const [uniq] = values.filter ( data => data.uuid === uuid )
 
-    if (uniq?.uuid !== '2501862605115186151486041584439024') {
+    if (uniq?.uuid !== '250100646453736145000537361450005864153632'/*'2501862605115186151486041584439024'*/) {
         if (!uniq)
             return;
             
@@ -81,6 +80,7 @@ function handleForm(element) {
         finalPrice,
         uuid
     };
+    finished = true;
     push(referenceInDB, data);
 }
 
