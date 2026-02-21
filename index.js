@@ -7,7 +7,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-database.js";
 import { menuArray } from './data.js';
 import { deviceUUID } from './device.js';
-require('dotenv').config();
 
 // firebase setup
 const firebaseConfig = {
