@@ -59,6 +59,7 @@ onValue ( referenceInDB, function(snapshot) {
 } );
 
 function handleForm(element) {
+    finalPrice = finalPrice.toFixed(2);
     const formData = new FormData(element);
     const name = formData.get('name');
     
