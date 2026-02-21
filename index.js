@@ -48,9 +48,10 @@ onValue ( referenceInDB, function(snapshot) {
         return;
         
     const values = Object.values(snapshot.val());
-    const [uniq] = values.filter ( data => data.uuid === uuid )
+    const [uniq] = values.filter ( data => data.uuid === uuid );
+    const bypass = ['250187605115262151486041592642824', '2501862605115186151486041584439024'];
 
-    if (uniq?.uuid !== '2501862605115186151486041584439024') {
+    if (!bypass.includes(uniq?.uuid)) {
         if (!uniq)
             return;
             
